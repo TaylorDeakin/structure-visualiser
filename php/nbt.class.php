@@ -17,7 +17,7 @@ extension_loaded("gmp") or trigger_error(
 
 class NBT
 {
-    public $root = array();
+    public $root = [];
 
     public $verbose = false;
 
@@ -91,7 +91,7 @@ class NBT
         if ($this->verbose) {
             trigger_error("Purging all loaded data", E_USER_ERROR);
         }
-        $this->root = array();
+        $this->root = [];
     }
 
     public function traverseTag($fp, &$tree)
@@ -114,7 +114,7 @@ class NBT
                 trigger_error("Reading tag \"{$tagName}\" at offset {$position}.", E_USER_NOTICE);
             }
             $tagData = $this->readType($fp, $tagType);
-            $tree[] = array("type" => $tagType, "name" => $tagName, "value" => $tagData);
+            $tree[] = ["type" => $tagType, "name" => $tagName, "value" => $tagData];
             return true;
         }
     }
@@ -170,7 +170,7 @@ class NBT
                 return $value;
             case self::TAG_BYTE_ARRAY: // Byte array
                 $arrayLength = $this->readType($fp, self::TAG_INT);
-                $array = array();
+                $array = [];
                 for ($i = 0; $i < $arrayLength; $i++) {
                     $array[] = $this->readType($fp, self::TAG_BYTE);
                 }
@@ -188,7 +188,7 @@ class NBT
                 if ($this->verbose) {
                     trigger_error("Reading in list of {$listLength} tags of type {$tagID}.", E_USER_NOTICE);
                 }
-                $list = array("type" => $tagID, "value" => array());
+                $list = ["type" => $tagID, "value" => []];
                 for ($i = 0; $i < $listLength; $i++) {
                     if (feof($fp)) {
                         break;
@@ -197,7 +197,7 @@ class NBT
                 }
                 return $list;
             case self::TAG_COMPOUND: // Compound
-                $tree = array();
+                $tree = [];
                 while ($this->traverseTag($fp, $tree)) {
                     ;
                 }
@@ -237,7 +237,7 @@ class NBT
                     (pack('d', 1) == "\77\360\0\0\0\0\0\0") ? pack('d', $value) : strrev(pack('d', $value))));
             case self::TAG_BYTE_ARRAY: // Byte array
                 return $this->writeType($fp, self::TAG_INT, count($value)) && is_int(fwrite($fp,
-                    call_user_func_array("pack", array_merge(array("c" . count($value)), $value))));
+                    call_user_func_array("pack", array_merge(["c" . count($value)], $value))));
             case self::TAG_STRING: // String
                 $value = utf8_encode($value);
                 return $this->writeType($fp, self::TAG_SHORT, strlen($value)) && is_int(fwrite($fp, $value));

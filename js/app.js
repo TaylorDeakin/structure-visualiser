@@ -52,24 +52,32 @@ function loadTexture(url) {
     return tex;
 }
 
-function rotateStair(stair, dataValue) {
+function rotateStair(stair, dataValue, pos) {
+    stair.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
     switch (dataValue) {
         case 0:
+            stair.rotation.y = Math.PI / 2;
             break;
         case 1:
+            stair.rotation.y = Math.PI / 2;
             break;
         case 2:
+            stair.rotation.y = Math.PI;
             break;
         case 3:
+            stair.rotation.x = Math.PI / 2;
             break;
         case 4:
-            stair.rotation.z = Math.PI / 2;
+            stair.rotation.z = Math.PI;
             break;
         case 5:
+            stair.rotation.z = Math.PI;
             break;
         case 6:
+            stair.rotation.z = Math.PI;
             break;
         case 7:
+            stair.rotation.z = Math.PI;
             break;
     }
 
@@ -138,7 +146,6 @@ function generateStructure(json) {
             element.texture = loadTexture("/res/textures/" + element.textureFile + ".png");
         }
 
-
     });
 
     // foreach block in the structure
@@ -152,12 +159,11 @@ function generateStructure(json) {
             var pos = element.pos;
 
             if (paletteItem.isStair) {
-                console.log(paletteItem.dataValue);
                 var stair = models.stair.clone();
                 stair.material.map = paletteItem.texture;
                 stair.scale.set(8, 8, 8);
-                stair.position.set(pos.x * 16, pos.y * 16, (pos.z * 16) - 4);
-                rotateStair(stair, dataValue);
+
+                rotateStair(stair, paletteItem.dataValue, pos);
                 scene.add(stair);
             } else if (paletteItem.isSlab) {
                 var slab = models.slab.clone();

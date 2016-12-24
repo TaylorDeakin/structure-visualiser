@@ -4,18 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/php/idToTexture.php" line="740" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82e08213-8c60-4024-9e79-d2b2e5eaf86f" name="Default" comment="adds the blocks data source">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/models/slab.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/models/stair.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/slabs.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/stairs.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="82e08213-8c60-4024-9e79-d2b2e5eaf86f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/idToTexture.php" afterPath="$PROJECT_DIR$/php/idToTexture.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/upload.php" afterPath="$PROJECT_DIR$/php/upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/blocks.csv" afterPath="$PROJECT_DIR$/res/blocks.csv" />
     </list>
     <ignored path="StructrureVisualiser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,34 +29,24 @@
     <favorites_list name="StructrureVisualiser" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7559199">
+    <splitter split-orientation="horizontal" split-proportion="0.52094716">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-24.166666">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="159" column="46" selection-start-line="159" selection-start-column="46" selection-end-line="159" selection-end-column="46" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8322148">
-                  <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+                <state vertical-scroll-proportion="0.58919805">
+                  <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -72,7 +55,7 @@
           <file leaf-file-name="idToDataValues.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php/idToDataValues.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-10.733334">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="1396" column="0" selection-start-line="1396" selection-start-column="0" selection-end-line="1403" selection-end-column="75" />
                   <folding />
                 </state>
@@ -82,8 +65,8 @@
           <file leaf-file-name="idToTexture.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php/idToTexture.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.9">
-                  <caret line="507" column="7" selection-start-line="507" selection-start-column="4" selection-end-line="507" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="533" column="30" selection-start-line="533" selection-start-column="30" selection-end-line="533" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -106,8 +89,8 @@
           <file leaf-file-name="upload.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php/upload.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.16720955">
-                  <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+                <state vertical-scroll-proportion="6.6693945">
+                  <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -143,12 +126,12 @@
         <option value="$PROJECT_DIR$/php/arrays.php" />
         <option value="$PROJECT_DIR$/php/idToDataValues.php" />
         <option value="$PROJECT_DIR$/res/blocks.csv" />
-        <option value="$PROJECT_DIR$/php/idToTexture.php" />
-        <option value="$PROJECT_DIR$/php/upload.php" />
         <option value="$PROJECT_DIR$/res/models/stair.json" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/php/idToTexture.php" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/php/upload.php" />
       </list>
     </option>
   </component>
@@ -393,7 +376,13 @@
       <option name="project" value="LOCAL" />
       <updated>1482460706062</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="the overdue commit after a few nights work. A lot of refactoring and foundational work. Models now show!">
+      <created>1482565779664</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1482565779665</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -412,12 +401,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122068234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12313433" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32665965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32665965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -431,6 +420,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.gitignore" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -447,7 +439,8 @@
     <MESSAGE value="adds .gitignore&#10;" />
     <MESSAGE value="adds arrays to act as dictionaries that do stuff" />
     <MESSAGE value="adds the blocks data source" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds the blocks data source" />
+    <MESSAGE value="the overdue commit after a few nights work. A lot of refactoring and foundational work. Models now show!" />
+    <option name="LAST_COMMIT_MESSAGE" value="the overdue commit after a few nights work. A lot of refactoring and foundational work. Models now show!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -476,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="160" column="21" selection-start-line="160" selection-start-column="21" selection-end-line="160" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -484,7 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -524,7 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -556,7 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,7 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1015" column="4" selection-start-line="1015" selection-start-column="4" selection-end-line="1015" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1015" column="4" selection-start-line="1015" selection-start-column="4" selection-end-line="1015" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1015" column="4" selection-start-line="1015" selection-start-column="4" selection-end-line="1015" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,7 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="25.787188">
           <caret line="129" column="259" selection-start-line="129" selection-start-column="259" selection-end-line="129" selection-end-column="259" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1015" column="4" selection-start-line="1015" selection-start-column="4" selection-end-line="1015" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -799,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,14 +790,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.7937219">
           <caret line="163" column="28" selection-start-line="163" selection-start-column="23" selection-end-line="163" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8371335">
+          <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/upload.php">
+    <entry file="file://$PROJECT_DIR$/php/idToDataValues.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.16720955">
-          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1396" column="0" selection-start-line="1396" selection-start-column="0" selection-end-line="1403" selection-end-column="75" />
           <folding />
         </state>
       </provider>
@@ -829,40 +826,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/idToTexture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.9">
-          <caret line="507" column="7" selection-start-line="507" selection-start-column="4" selection-end-line="507" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="533" column="30" selection-start-line="533" selection-start-column="30" selection-end-line="533" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/idToDataValues.php">
+    <entry file="file://$PROJECT_DIR$/php/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.733334">
-          <caret line="1396" column="0" selection-start-line="1396" selection-start-column="0" selection-end-line="1403" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.166666">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state vertical-scroll-proportion="6.6693945">
+          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="159" column="46" selection-start-line="159" selection-start-column="46" selection-end-line="159" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8322148">
-          <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.58919805">
+          <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
           <folding />
         </state>
       </provider>

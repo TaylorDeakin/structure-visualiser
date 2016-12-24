@@ -192,10 +192,12 @@ $blockIdToTexture = [
     27 => "rail_golden_powered",
     28 => "rail_detector",
     29 => [
-        "top" => "piston_top_sticky",
-        "side" => "piston_side",
-        "bottom" => "piston_bottom",
-        "inner" => "piston_inner"
+        0 => [
+            "top" => "piston_top_sticky",
+            "side" => "piston_side",
+            "bottom" => "piston_bottom",
+            "inner" => "piston_inner"
+        ]
     ],
     30 => "cobweb",
     31 => [
@@ -205,10 +207,12 @@ $blockIdToTexture = [
     ],
     32 => "deadbush",
     33 => [
-        "top" => "piston_top",
-        "side" => "piston_side",
-        "bottom" => "piston_bottom",
-        "inner" => "piston_inner"
+        0 => [
+            "top" => "piston_top",
+            "side" => "piston_side",
+            "bottom" => "piston_bottom",
+            "inner" => "piston_inner"
+        ]
     ],
     34 => "piston_top",
     35 => [
@@ -267,16 +271,29 @@ $blockIdToTexture = [
         5 => "stonebrick",
         6 => "nether_brick",
         7 => "quartz_block_side",
+        8 => "stone_slab_top",
+        9 => "sandstone_normal",
+        10 => "planks_oak",
+        11 => "cobblestone",
+        12 => "brick",
+        13 => "stonebrick",
+        14 => "nether_brick",
+        15 => "quartz_block_side",
     ],
     45 => "brick",
     46 => [
-        "top" => "tnt_top",
-        "side" => "tnt_side",
-        "bottom" => "tnt_bottom",
+        0 => [
+            "top" => "tnt_top",
+            "side" => "tnt_side",
+            "bottom" => "tnt_bottom",
+        ]
+
     ],
     47 => [
-        "top" => "planks_oak",
-        "sides" => "bookshelf",
+        0 => [
+            "top" => "planks_oak",
+            "sides" => "bookshelf",
+        ]
     ],
     48 => "cobblestone_mossy",
     49 => "obsidian",
@@ -289,24 +306,32 @@ $blockIdToTexture = [
     56 => "diamond_ore",
     57 => "diamond_block",
     58 => [
-        "top" => "crafting_table_top",
-        "side" => "crafting_table_side",
-        "bottom" => "planks_oak"
+        0 => [
+            "top" => "crafting_table_top",
+            "side" => "crafting_table_side",
+            "bottom" => "planks_oak"
+        ]
     ],
     59 => "wheat_stage_7",
     60 => [
-        "top" => "farmland_wet",
-        "side" => "dirt",
+        0 => [
+            "top" => "farmland_wet",
+            "side" => "dirt",
+        ]
     ],
     61 => [
-        "top" => "furnace_top",
-        "side" => "furnace_side",
-        "front" => "furnace_front",
+        0 => [
+            "top" => "furnace_top",
+            "side" => "furnace_side",
+            "front" => "furnace_front",
+        ]
     ],
     62 => [
-        "top" => "furnace_top",
-        "side" => "furnace_side",
-        "front" => "furnace_front_on",
+        0 => [
+            "top" => "furnace_top",
+            "side" => "furnace_side",
+            "front" => "furnace_front_on",
+        ]
     ],
     63 => "sign",
     64 => [
@@ -353,12 +378,20 @@ $blockIdToTexture = [
     78 => "snow",
     79 => "ice",
     80 => "snow",
-    81 => "cactus",
+    81 => [
+        0 => [
+            "top" => "cactus_top",
+            "side" => "cactus_side",
+            "bottom" => "cactus_bottom",
+        ]
+    ],
     82 => "clay",
     83 => "reeds",
     84 => [
-        "top" => "jukebox",
-        "side" => "noteblock",
+        0 => [
+            "top" => "jukebox",
+            "side" => "noteblock",
+        ]
     ],
     85 => "planks_oak",
     86 => "pumpkin_side",
@@ -368,9 +401,11 @@ $blockIdToTexture = [
     90 => "portal",
     91 => "pumpkin_side",
     92 => [
-        "top" => "cake_top",
-        "side" => "cake_side",
-        "bottom" => "cake_bottom"
+        0 => [
+            "top" => "cake_top",
+            "side" => "cake_side",
+            "bottom" => "cake_bottom"
+        ]
     ],
     93 => "repeater_off",
     94 => "repeater_on",
@@ -419,8 +454,11 @@ $blockIdToTexture = [
     108 => "brick",
     109 => "stonebrick",
     110 => [
-        "top" => "mycelium_side",
-        "side" => "mycelium_top",
+        0 => [
+            "top" => "mycelium_side",
+            "side" => "mycelium_top",
+        ]
+
     ],
     111 => "waterlily",
     112 => "nether_brick",
@@ -428,24 +466,32 @@ $blockIdToTexture = [
     114 => "nether_brick",
     115 => "nether_wart_stage_2",
     116 => [
-        "top" => "enchanting_table_top",
-        "side" => "enchanting_table_side",
-        "bottom" => "enchanting_table_bottom",
+        0 => [
+            "top" => "enchanting_table_top",
+            "side" => "enchanting_table_side",
+            "bottom" => "enchanting_table_bottom",
+        ]
     ],
     117 => [
-        "base" => "brewing_stand_base",
-        "stand" => "brewing_stand",
+        0 => [
+            "base" => "brewing_stand_base",
+            "stand" => "brewing_stand",
+        ]
     ],
     118 => [
-        "top" => "cauldron_top",
-        "side" => "cauldron_side",
-        "inner" => "cauldron_inner",
-        "bottom" => "cauldron_bottom",
+        0 => [
+            "top" => "cauldron_top",
+            "side" => "cauldron_side",
+            "inner" => "cauldron_inner",
+            "bottom" => "cauldron_bottom",
+        ]
     ],
     119 => "portal",
     120 => [
-        "top" => "endframe_top",
-        "side" => "endframe_side"
+        0 => [
+            "top" => "endframe_top",
+            "side" => "endframe_side"
+        ]
     ],
     121 => "end_stone",
     122 => "dragon_egg",
@@ -489,8 +535,10 @@ $blockIdToTexture = [
     143 => "planks_oak",
     144 => null,
     145 => [
-        "base" => "anvil_base",
-        "top" => "anvil_top_damaged_0",
+        0 => [
+            "base" => "anvil_base",
+            "top" => "anvil_top_damaged_0",
+        ]
     ],
     146 => null,
     147 => "block_gold",
@@ -498,15 +546,19 @@ $blockIdToTexture = [
     149 => "comparator_off",
     150 => "comparator_on",
     151 => [
-        "top" => "daylight_detector_top",
-        "side" => "daylight_detector_side"
+        0 => [
+            "top" => "daylight_detector_top",
+            "side" => "daylight_detector_side"
+        ]
     ],
     152 => "redstone_block",
     153 => "quartz_ore",
     154 => [
-        "top" => "hopper_top",
-        "outside" => "hopper_outside",
-        "inside" => "hopper_inside",
+        0 => [
+            "top" => "hopper_top",
+            "outside" => "hopper_outside",
+            "inside" => "hopper_inside",
+        ]
     ],
     155 => [
         0 => [
@@ -636,8 +688,10 @@ $blockIdToTexture = [
     ],
     169 => "sea_lantern",
     170 => [
-        "top" => "hay_block_top",
-        "side" => "hay_block_side",
+        0 => [
+            "top" => "hay_block_top",
+            "side" => "hay_block_side",
+        ]
     ],
     171 => [
         0 => "wool_colored_white",
@@ -676,8 +730,10 @@ $blockIdToTexture = [
     176 => "wool_colored_white",
     177 => "wool_colored_white",
     178 => [
-        "top" => "daylight_detector_inverted_top",
-        "side" => "daylight_detector_side"
+        0 => [
+            "top" => "daylight_detector_inverted_top",
+            "side" => "daylight_detector_side"
+        ]
     ],
     179 => [
         0 => [
@@ -804,8 +860,10 @@ $blockIdToTexture = [
     200 => "chorus_flower",
     201 => "purpur_block",
     202 => [
-        "top" => "purpur_pillar_top",
-        "side" => "purpur_pillar"
+        0 => [
+            "top" => "purpur_pillar_top",
+            "side" => "purpur_pillar"
+        ]
     ],
     203 => "purpur_block",
     204 => "purpur_block",

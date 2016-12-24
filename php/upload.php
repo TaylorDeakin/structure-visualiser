@@ -2,12 +2,42 @@
 
 require("nbt.class.php");
 require("idToDataValues.php");
-
-$blockNameToId = array_flip(array_column(array_map('str_getcsv', file('../res/blocks.csv')), 2));
+require("IdToTexture.php");
+$csvArray = array_map('str_getcsv', file('../res/blocks.csv'));
+$blockId = array_column($csvArray, 0);
+$blockName = array_column($csvArray, 1);
+$blockNameToId = array_combine($blockName, $blockId);
 
 $target = "../uploads/";
 $file = $target . basename($_FILES["file"]["name"]);
 $success = true;
+
+$slabs = [
+    43,
+    44,
+    125,
+    126,
+    181,
+    182,
+    204,
+    205
+];
+$stairs = [
+    53,
+    67,
+    108,
+    109,
+    114,
+    128,
+    134,
+    135,
+    136,
+    156,
+    163,
+    164,
+    180,
+    203
+];
 
 if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
     $nbt = new NBT();
@@ -32,8 +62,19 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
     // loop through palette items
     foreach ($palette as $paletteItem) {
         $choice = decodePalette($paletteItem);
-        $formatted_palette[] = $choice;
+        if (isOfSpecifiedType($choice["id"], $stairs)) {
+            $choice["isStair"] = true;
+            $formatted_palette[] = $choice;
+            continue;
+        }
 
+        if (isOfSpecifiedType($choice["id"], $slabs)) {
+            $choice["isSlab"] = true;
+            $formatted_palette[] = $choice;
+            continue;
+        }
+
+        $formatted_palette[] = $choice;
     }
 
     $result = [
@@ -83,12 +124,10 @@ function decodePalette($paletteItem)
             $new_item["properties"][] = $property["name"] . ":" . $property["value"];
         }
 
-        $new_item["textureFile"] = constructTextureName($new_item);
-
     } else {
         $new_item = [
             "name" => $paletteItem[0]['value'],
-            "textureFile" => explode(":", $paletteItem[0]['value'])[1],
+
         ];
     }
 
@@ -96,25 +135,30 @@ function decodePalette($paletteItem)
     if (isset($new_item["properties"])) {
         $new_item["dataValue"] = getDataValues($new_item["id"], $new_item["properties"]);
     }
-
+    $new_item["textureFile"] = constructTextureName($new_item);
     return $new_item;
 }
 
 function constructTextureName($palette_item)
 {
-    global $blockToTextureName;
-    $textureName = $palette_item["name"];
-    $properties = $palette_item["properties"];
-    if (isset($properties["color"])) {
-        return $textureName .= "_" . "colored" . "_" . $properties["color"];
+    global $blockIdToTexture;
+    $id = $palette_item["id"];
+
+    if (!isset($blockIdToTexture[$id])) {
+        return null;
     }
 
-    if (isset($blockToTextureName[$textureName])) {
-        return $blockToTextureName[$textureName];
+    $result = $blockIdToTexture[$id];
+
+    if (!is_array($result)) {
+        return $result;
     }
+    $dataValue = 0;
+    if (isset($palette_item["dataValue"])) {
+        $dataValue = $palette_item["dataValue"];
+    }
+    return $result[$dataValue];
 
-
-    return $textureName;
 }
 
 
@@ -137,4 +181,14 @@ function getDataValues($blockId, $properties)
             }
         }
     }
+
+}
+
+function isOfSpecifiedType($blockId, $arrayToSearch)
+{
+    if (in_array($blockId, $arrayToSearch)) {
+        return true;
+    }
+
+    return false;
 }

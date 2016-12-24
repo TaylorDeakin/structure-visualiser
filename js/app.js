@@ -33,7 +33,6 @@ var models = {
     stair: null,
     slab: null,
 };
-count = 0;
 for (key in Object.keys(models)) {
     loadModel(key);
 }
@@ -54,30 +53,24 @@ function loadTexture(url) {
 
 function rotateStair(stair, dataValue, pos) {
     stair.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
+    console.log(dataValue);
     switch (dataValue) {
         case 0:
             stair.rotation.y = Math.PI / 2;
             break;
         case 1:
-            stair.rotation.y = Math.PI / 2;
             break;
         case 2:
-            stair.rotation.y = Math.PI;
             break;
         case 3:
-            stair.rotation.x = Math.PI / 2;
             break;
         case 4:
-            stair.rotation.z = Math.PI;
             break;
         case 5:
-            stair.rotation.z = Math.PI;
             break;
         case 6:
-            stair.rotation.z = Math.PI;
             break;
         case 7:
-            stair.rotation.z = Math.PI;
             break;
     }
 

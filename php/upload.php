@@ -42,13 +42,13 @@ $stairs = [
 if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
     $nbt = new NBT();
     $nbt->loadFile($file);
-
+    $nbtData = $nbt->root[0]['value'];
     // get the data from the file
-    $blocks = $nbt->root[0]['value'][0]['value']['value'];
-    $palette = $nbt->root[0]['value'][1]['value']['value'];
-    $size = $nbt->root[0]['value'][2]['value']['value'];
-    $author = $nbt->root[0]['value'][3]['value'];
-    $version = $nbt->root[0]['value'][4]['value'];
+    $blocks = findNBTSection($nbtData, "blocks")["value"];
+    $palette = findNBTSection($nbtData, "palette")["value"];
+    $size = findNBTSection($nbtData, "size")["value"];
+    $author = findNBTSection($nbtData, "author");
+    $version = findNBTSection($nbtData, "version");
 
     $formatted_blocks = [];
     // loop through the blocks and format them nicely
@@ -64,16 +64,20 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
         $choice = decodePalette($paletteItem);
         if (isOfSpecifiedType($choice["id"], $stairs)) {
             $choice["isStair"] = true;
-            $formatted_palette[] = $choice;
-            continue;
+            $choice["properties"] = array_filter($choice["properties"], function ($k, $v) {
+                return !(strpos($k, "shape") !== false);
+            }, ARRAY_FILTER_USE_BOTH);
+
+
         }
 
         if (isOfSpecifiedType($choice["id"], $slabs)) {
             $choice["isSlab"] = true;
-            $formatted_palette[] = $choice;
-            continue;
-        }
 
+        }
+        if (isset($choice["properties"])) {
+            $choice["dataValue"] = getDataValues($choice["id"], $choice["properties"]);
+        }
         $formatted_palette[] = $choice;
     }
 
@@ -132,9 +136,6 @@ function decodePalette($paletteItem)
     }
 
     $new_item["id"] = $blockNameToId[$new_item["name"]];
-    if (isset($new_item["properties"])) {
-        $new_item["dataValue"] = getDataValues($new_item["id"], $new_item["properties"]);
-    }
     $new_item["textureFile"] = constructTextureName($new_item);
     return $new_item;
 }
@@ -161,34 +162,54 @@ function constructTextureName($palette_item)
 
 }
 
-
+/**
+ * @param $blockId - the id of the block to find the data values for
+ * @param $properties - the properties associated with said block
+ * @return int - the data value of the specified block (will default to 0)
+ */
 function getDataValues($blockId, $properties)
 {
     global $blockIdToDataValues;
-
+    // if this exists
     if (isset($blockIdToDataValues[$blockId])) {
+        // sort the properties
+        asort($properties);
+        // rebase the array to start at 0
+        $properties = array_values($properties);
+        $propHash = md5(serialize($properties));
+
         $variants = $blockIdToDataValues[$blockId];
         foreach ($variants as $key => $variant) {
-            foreach ($properties as $property) {
-                if ($variant[0] === $property) {
-                    $match = true;
-                } else {
-                    $match = false;
-                }
-                if ($match) {
-                    return $key;
-                }
+            // sort the variants so they are in the same order as the properties from above
+            asort($variant);
+            $variantHash = md5(serialize($variant));
+            if ($variantHash === $propHash) {
+                return $key;
             }
         }
     }
-
+    // default case
+    return 0;
 }
 
 function isOfSpecifiedType($blockId, $arrayToSearch)
 {
+
     if (in_array($blockId, $arrayToSearch)) {
         return true;
     }
 
     return false;
+}
+
+
+function findNBTSection($data, $sectionName)
+{
+
+    foreach ($data as $section) {
+        if ($section["name"] === $sectionName) {
+            return $section["value"];
+        }
+    }
+
 }

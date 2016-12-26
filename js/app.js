@@ -1,33 +1,42 @@
-// new scene, camera and light
-var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-var light = new THREE.AmbientLight(0xffffff); // soft white light
-scene.add(light);
+var scene, camera, light, renderer, controls, MAXANISO;
+var canvasOnScreen = false;
+var progressAmount = 0;
+var spinnerText = document.getElementById("spinner-text");
+function init() {
+    // new scene, camera and light
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    var light = new THREE.AmbientLight(0xffffff); // soft white light
+    scene.add(light);
 
 // the renderer itself - alpha means transparency
-var renderer = new THREE.WebGLRenderer({alpha: true});
-renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.sortObjects = false;
-document.body.appendChild(renderer.domElement);
-var MAXANISO = renderer.getMaxAnisotropy();
+    renderer = new THREE.WebGLRenderer({alpha: true});
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.sortObjects = false;
+
+    MAXANISO = renderer.getMaxAnisotropy();
 
 // mouse control via another library
-controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls = new THREE.OrbitControls(camera, renderer.domElement);
 
 // set default camera position
-camera.position.z = 50;
-camera.position.y = 500;
-camera.position.x = 500;
+    camera.position.z = 50;
+    camera.position.y = 500;
+    camera.position.x = 500;
 
-var axisHelper = new THREE.AxisHelper(5);
-scene.add(axisHelper);
+    var axisHelper = new THREE.AxisHelper(5);
+    scene.add(axisHelper);
+    canvasOnScreen = true;
+}
 
 // render loop
 var render = function () {
+    if (!canvasOnScreen) {
+        return;
+    }
     requestAnimationFrame(render);
     renderer.render(scene, camera);
 };
-render();
 
 var models = {
     stair: null,
@@ -52,39 +61,72 @@ function loadTexture(url) {
 }
 
 function rotateStair(stair, dataValue, pos) {
+    spinnerText.innerHTML = "Rotating Stairs";
     stair.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
     console.log(dataValue);
     switch (dataValue) {
+        // facing south - bottom
         case 0:
-            stair.rotation.y = Math.PI / 2;
+            // 180 degrees
+            stair.rotation.y = Math.PI;
+            stair.position.set((pos.x * 16) + 4, pos.y * 16, pos.z * 16);
             break;
+        // facing north - bottom
         case 1:
             break;
+        // facing east - bottom
         case 2:
+            // 270 degrees
+            stair.rotation.y = 4.71239;
+            stair.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
             break;
+        // facing west - bottom
         case 3:
+            stair.rotation.y = 1.5708;
+            stair.position.set((pos.x * 16) - 4, pos.y * 16, pos.z * 16);
             break;
+        // facing south - top
         case 4:
+            stair.position.set(pos.x * 16, pos.y * 16, (pos.z * 16));
+            stair.rotation.z = Math.PI;
             break;
+        // facing north - top
         case 5:
+            stair.position.set(pos.x * 16, (pos.y * 16) + 4, (pos.z * 16) + 4);
+            stair.rotation.z = Math.PI;
+            stair.rotation.x = Math.PI / 2;
             break;
+        // facing east - top
         case 6:
+            stair.position.set((pos.x * 16) + 4, pos.y * 16, pos.z * 16);
+            stair.rotation.z = Math.PI;
+            stair.rotation.y = 4.71239;
             break;
+        // facing west - top
         case 7:
+            stair.rotation.z = Math.PI;
+            stair.position.set((pos.x * 16) - 4, pos.y * 16, pos.z * 16);
+            stair.rotation.y = 1.5708;
             break;
     }
 
 }
 
+var incrementAmount;
 /**
  * makes a structure appear
  * @param json - json representation of the structure
  */
 function generateStructure(json) {
+    spinnerText.innerHTML = "Creating Canvas...";
+    init();
+
     var data = JSON.parse(json);
     var blocks = data['blocks'];
+    incrementAmount = 100 / blocks.length;
     var palette = data['palette'];
 
+    spinnerText.innerHTML = "Loading Textures";
     var loader = new THREE.TextureLoader();
     palette.forEach(function (element) {
         if (!element.textureFile) return;
@@ -140,7 +182,7 @@ function generateStructure(json) {
         }
 
     });
-
+    spinnerText.innerHTML = "Placing Blocks";
     // foreach block in the structure
     blocks.forEach(function (element) {
         paletteItem = palette[element.state];
@@ -183,8 +225,10 @@ function generateStructure(json) {
                 scene.add(cube);
             }
         }
-
-    })
+    });
+    document.body.appendChild(renderer.domElement);
+    removeSpinner();
+    render();
 }
 
 // prevent form submission and instead send ajax request
@@ -202,11 +246,54 @@ document.getElementById("structure-upload").addEventListener("submit", function 
 
     http.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            //console.log(this.response);
             generateStructure(this.responseText);
         }
     };
 
     http.open(form.method, form.action);
     http.send(data);
+    clearScreen();
 });
+
+var input = document.getElementById("file");
+
+input.addEventListener('focus', function () {
+    input.classList.add('has-focus');
+});
+input.addEventListener('blur', function () {
+    input.classList.remove('has-focus');
+});
+
+var inputs = document.querySelectorAll('.inputfile');
+Array.prototype.forEach.call(inputs, function (input) {
+    var label = input.nextElementSibling,
+        labelVal = label.innerHTML;
+
+    input.addEventListener('change', function (e) {
+        var fileName = '';
+        if (this.files && this.files.length > 1)
+            fileName = ( this.getAttribute('data-multiple-caption') || '' ).replace('{count}', this.files.length);
+        else
+            fileName = e.target.value.split('\\').pop();
+
+        if (fileName)
+            label.querySelector('span').innerHTML = fileName;
+        else
+            label.innerHTML = labelVal;
+    });
+});
+var main = document.getElementById("mainWrapper");
+function clearScreen() {
+    main.className += " exit";
+    setTimeout(showSpinner, 500);
+}
+
+function showSpinner() {
+    main.parentNode.removeChild(main);
+    document.getElementById("spinner").className = "spinner entrance";
+}
+
+function removeSpinner() {
+    var spinner = document.getElementById("spinner");
+    //document.body.removeChild(spinner);
+}

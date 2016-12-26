@@ -176,13 +176,13 @@ function getDataValues($blockId, $properties)
         asort($properties);
         // rebase the array to start at 0
         $properties = array_values($properties);
-        $propHash = md5(serialize($properties));
+        $propHash = sha1(serialize($properties));
 
         $variants = $blockIdToDataValues[$blockId];
         foreach ($variants as $key => $variant) {
             // sort the variants so they are in the same order as the properties from above
             asort($variant);
-            $variantHash = md5(serialize($variant));
+            $variantHash = sha1(serialize($variant));
             if ($variantHash === $propHash) {
                 return $key;
             }

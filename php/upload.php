@@ -1,8 +1,13 @@
 <?php
-
+// nbt library
 require("nbt.class.php");
+// various massive arrays
 require("idToDataValues.php");
 require("IdToTexture.php");
+require("blockTypeArrays.php");
+
+// I should turn this into an actual array, but it works for now
+// this loads all the blocks, filters thigns out, and then makes an array
 $csvArray = array_map('str_getcsv', file('../res/blocks.csv'));
 $blockId = array_column($csvArray, 0);
 $blockName = array_column($csvArray, 1);
@@ -11,35 +16,9 @@ $blockNameToId = array_combine($blockName, $blockId);
 $target = "../uploads/";
 $file = $target . basename($_FILES["file"]["name"]);
 $success = true;
-
-$slabs = [
-    43,
-    44,
-    125,
-    126,
-    181,
-    182,
-    204,
-    205
-];
-$stairs = [
-    53,
-    67,
-    108,
-    109,
-    114,
-    128,
-    134,
-    135,
-    136,
-    156,
-    163,
-    164,
-    180,
-    203
-];
-
+// if the file succeeded
 if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
+    // need to handle errors here
     $nbt = new NBT();
     $nbt->loadFile($file);
     $nbtData = $nbt->root[0]['value'];
@@ -60,21 +39,33 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
     $formatted_palette = [];
 
     // loop through palette items
+    // if they're a special block (ex stair or slab etc) then mark them as such
     foreach ($palette as $paletteItem) {
         $choice = decodePalette($paletteItem);
+        $foundType = false;
         if (isOfSpecifiedType($choice["id"], $stairs)) {
+            $foundType = true;
             $choice["isStair"] = true;
+            // strip out the shape property because it's causing trouble, and not needed
             $choice["properties"] = array_filter($choice["properties"], function ($k, $v) {
                 return !(strpos($k, "shape") !== false);
             }, ARRAY_FILTER_USE_BOTH);
-
-
         }
 
-        if (isOfSpecifiedType($choice["id"], $slabs)) {
+        if (!$foundType && isOfSpecifiedType($choice["id"], $slabs)) {
+            $foundType = true;
             $choice["isSlab"] = true;
-
         }
+
+        if (!$foundType && isOfSpecifiedType($choice["id"], $fences)) {
+            $foundType = true;
+            $choice["isFence"] = true;
+        }
+
+        if (!$foundType && isOfSpecifiedType($choice["id"], $walls)) {
+            $choice["isWall"] = true;
+        }
+
         if (isset($choice["properties"])) {
             $choice["dataValue"] = getDataValues($choice["id"], $choice["properties"]);
         }
@@ -94,9 +85,13 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
     echo $result_json;
 
 } else {
+    // I really need better error handling
     var_dump("error");
 }
-
+/**
+ * @param $block - data from the NBT file
+ * @return array - nicely formatted block data
+ */
 function decodeBlock($block)
 {
     $new_block = [
@@ -111,12 +106,15 @@ function decodeBlock($block)
     return $new_block;
 }
 
-
+/**
+ * @param $paletteItem - palette data from the nbt file
+ * @return array - nicely formatted data about each palette item
+ */
 function decodePalette($paletteItem)
 {
 
     global $blockNameToId;
-
+    // if there are two items, properties exist and we need to mess with them
     if (count($paletteItem) == 2) {
         $new_item = [
             "properties" => [],
@@ -127,19 +125,24 @@ function decodePalette($paletteItem)
         foreach ($paletteItem[0]['value'] as $property) {
             $new_item["properties"][] = $property["name"] . ":" . $property["value"];
         }
-
+        // otherwise, we can just set the name and be done
     } else {
         $new_item = [
             "name" => $paletteItem[0]['value'],
 
         ];
     }
-
+    // get the id from that massive array
     $new_item["id"] = $blockNameToId[$new_item["name"]];
+    // find the texture file
     $new_item["textureFile"] = constructTextureName($new_item);
     return $new_item;
 }
 
+/**
+ * @param $palette_item - the already formatted paletteItem
+ * @return string - the texture name
+ */
 function constructTextureName($palette_item)
 {
     global $blockIdToTexture;
@@ -192,17 +195,24 @@ function getDataValues($blockId, $properties)
     return 0;
 }
 
+/**
+ * general purpose function for seeing if a specific block is of a specified type
+ * this is used for seeing if it's a stair or somethingl ike that
+ * @param $blockId - id of the block we want to test
+ * @param $arrayToSearch - array containing blockids of the same type
+ * @return bool - true if it's one of those, false if not
+ */
 function isOfSpecifiedType($blockId, $arrayToSearch)
 {
-
-    if (in_array($blockId, $arrayToSearch)) {
-        return true;
-    }
-
-    return false;
+    return in_array($blockId, $arrayToSearch);
 }
 
-
+/**
+ * since we don't know the order of the data in the nbt file, we need to search for a specific section
+ * @param $data - the nbt data blob chunk thing
+ * @param $sectionName - the part of the data we want
+ * @return mixed - the section we want
+ */
 function findNBTSection($data, $sectionName)
 {
 
@@ -211,5 +221,6 @@ function findNBTSection($data, $sectionName)
             return $section["value"];
         }
     }
-
+    // return null if nothing found
+    return null;
 }

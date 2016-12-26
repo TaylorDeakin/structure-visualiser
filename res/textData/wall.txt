@@ -1,0 +1,6 @@
+68minecraft:wall_sign
+,
+139minecraft:cobblestone_wall
+,
+177minecraft:wall_banner
+,

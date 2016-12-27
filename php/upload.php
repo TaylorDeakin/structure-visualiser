@@ -166,32 +166,39 @@ function constructTextureName($palette_item)
 }
 
 /**
- * @param $blockId - the id of the block to find the data values for
+ * getting the data values associated with a particular blocktype is important for finding textures and stuff
+ * this function does all that, but in an interesting way.
+ *  * @param $blockId - the id of the block to find the data values for
  * @param $properties - the properties associated with said block
  * @return int - the data value of the specified block (will default to 0)
  */
 function getDataValues($blockId, $properties)
 {
     global $blockIdToDataValues;
-    // if this exists
+    // if there are data values associated with the block id at hand
     if (isset($blockIdToDataValues[$blockId])) {
-        // sort the properties
+        // sort the properties we've been given
         asort($properties);
         // rebase the array to start at 0
         $properties = array_values($properties);
+        // hash a serialized version of the array
+        // yes, I'm using sha1, no, that doesn't matter, this isn't a password
         $propHash = sha1(serialize($properties));
-
+        // now get all the different possibilities for this block id
         $variants = $blockIdToDataValues[$blockId];
+        // loop through all of them
         foreach ($variants as $key => $variant) {
             // sort the variants so they are in the same order as the properties from above
             asort($variant);
+            // hash using the same algo as above
             $variantHash = sha1(serialize($variant));
+            // if the hashes match, we're done here!
             if ($variantHash === $propHash) {
                 return $key;
             }
         }
     }
-    // default case
+    // default case of 0, because that's Minecraft's default case too.
     return 0;
 }
 

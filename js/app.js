@@ -94,46 +94,47 @@ function rotateStair(stair, dataValue, pos) {
             stair.rotationName = "facing south - bottom";
             // 180 degrees
             stair.rotation.y = Math.PI;
-            stair.position.set((pos.x * 16), (pos.y * 16), (pos.z * 16) + 8);
+            stair.position.set((pos.x * 16), (pos.y * 16), (pos.z * 16) + 4);
             break;
         // facing north - bottom
         case 1:
             stair.rotationName = "facing north - bottom";
+            stair.position.set((pos.x * 16), (pos.y * 16), (pos.z * 16) - 4);
             break;
         // facing east - bottom
         case 2:
             stair.rotationName = "facing east - bottom";
             // 270 degrees
             stair.rotation.y = 4.71239;
-            stair.position.set(pos.x * 16, (pos.y * 16), pos.z * 16);
+            stair.position.set((pos.x * 16) + 4, (pos.y * 16), pos.z * 16);
             break;
         // facing west - bottom
         case 3:
             stair.rotationName = "facing west - bottom";
             stair.rotation.y = 1.5708;
-            stair.position.set((pos.x * 16) - 4, pos.y * 16, pos.z * 16);
+            stair.position.set((pos.x * 16), pos.y * 16, pos.z * 16);
             break;
         // facing south - top
         case 4:
-            stair.position.set(pos.x * 16, pos.y * 16, (pos.z * 16));
+            stair.position.set((pos.x * 16), (pos.y * 16), (pos.z * 16) + 4);
             stair.rotation.z = Math.PI;
             break;
         // facing north - top
         case 5:
-            stair.position.set(pos.x * 16, (pos.y * 16) + 4, (pos.z * 16) + 4);
+            stair.position.set((pos.x * 16), (pos.y * 16), (pos.z * 16) - 4);
             stair.rotation.z = Math.PI;
             stair.rotation.x = Math.PI / 2;
             break;
         // facing east - top
         case 6:
-            stair.position.set((pos.x * 16) + 4, pos.y * 16, pos.z * 16);
+            stair.position.set((pos.x * 16) + 4, (pos.y * 16), pos.z * 16);
             stair.rotation.z = Math.PI;
             stair.rotation.y = 4.71239;
             break;
         // facing west - top
         case 7:
             stair.rotation.z = Math.PI;
-            stair.position.set((pos.x * 16) - 4, pos.y * 16, pos.z * 16);
+            stair.position.set((pos.x * 16), pos.y * 16, pos.z * 16);
             stair.rotation.y = 1.5708;
             break;
     }
@@ -285,9 +286,6 @@ document.getElementById("structure-upload").addEventListener("submit", function 
     var structure = document.getElementById("file").files[0];
 
     data.append("file", structure);
-
-    console.log(data.get("file"));
-
     http.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             generateStructure(this.responseText);

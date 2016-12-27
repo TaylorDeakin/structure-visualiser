@@ -7,7 +7,7 @@ Before getting started, there are a couple of requirements
 * a browser that supports WebGL ([caniuse](http://caniuse.com/#search=webGL))
 * a PHP server of some description (MAMP/WAMP/LAMP/etc or PHPStorm (or just install PHP))
 
- Once you've done that, it's fairly easy to get started - just chuck the files on a server, then navigate to it in your browser. 
+Once you've done that, it's fairly easy to get started - just chuck the files on a server, then navigate to it in your browser. 
 
 ## Glossary
 A summary of terms relating to the project that will hopefully help explain my code

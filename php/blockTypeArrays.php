@@ -44,3 +44,9 @@ $fences = [
 $walls = [
     139
 ];
+
+$panes = [
+    101, // iron bars - they use the same model
+    102,
+    160
+];

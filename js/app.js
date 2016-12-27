@@ -49,6 +49,7 @@ var models = {
     fencePost: null,
     wallPost: null,
     wallInner: null,
+    pane: null,
 };
 // load all the models specified above
 for (key in Object.keys(models)) {
@@ -222,19 +223,19 @@ function generateStructure(json) {
 
             // get the position part of the object for easier use later
             var pos = element.pos;
-
+            var model;
             if (paletteItem.isStair) {
-                var stair = models.stair.clone();
-                stair.material.map = paletteItem.texture;
-                stair.material.needsUpdate = true;
-                stair.scale.set(8, 8, 8);
-                rotateStair(stair, paletteItem.dataValue, pos);
-                scene.add(stair);
+                model = models.stair.clone();
+                model.material.map = paletteItem.texture;
+                model.material.needsUpdate = true;
+                model.scale.set(8, 8, 8);
+                rotateStair(model, paletteItem.dataValue, pos);
+                scene.add(model);
             } else if (paletteItem.isSlab) {
-                var slab = models.slab.clone();
-                slab.material.map = paletteItem.texture;
-                slab.material.needsUpdate = true;
-                slab.scale.set(8, 8, 8);
+                model = models.slab.clone();
+                model.material.map = paletteItem.texture;
+                model.material.needsUpdate = true;
+                model.scale.set(8, 8, 8);
                 // slabs start out centered
                 // -4 will move them to the bottom
                 var offset = -4;
@@ -242,22 +243,22 @@ function generateStructure(json) {
                 if (paletteItem.dataValue > 7) {
                     offset = 4;
                 }
-                slab.position.set(pos.x * 16, (pos.y * 16) + offset, pos.z * 16);
-                scene.add(slab);
+                model.position.set(pos.x * 16, (pos.y * 16) + offset, pos.z * 16);
+                scene.add(model);
             } else if (paletteItem.isFence) {
-                var fence = models.fencePost.clone();
-                fence.material.map = paletteItem.texture;
-                fence.material.needsUpdate = true;
-                fence.scale.set(8, 8, 8);
-                fence.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
-                scene.add(fence);
+                model = models.fencePost.clone();
+                model.material.map = paletteItem.texture;
+                model.material.needsUpdate = true;
+                model.scale.set(8, 8, 8);
+                model.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
+                scene.add(model);
             } else {
                 // 16x16x16 cube
                 var geometry = new THREE.CubeGeometry(16, 16, 16);
                 var texture = paletteItem.texture;
                 var material;
                 if (texture.constructor === Array) {
-                    material = new THREE.MeshFaceMaterial(texture);
+                    material = new THREE.MultiMaterial(texture);
                 } else {
                     material = new THREE.MeshBasicMaterial({map: palette[element.state].texture, transparent: true});
                 }
@@ -341,4 +342,9 @@ function showSpinner() {
 function removeSpinner() {
     var spinner = document.getElementById("spinner");
     document.body.removeChild(spinner);
+}
+
+function cloneModel(model) {
+    object = new THREE.Mesh(model.geometry, model.material);
+    return object;
 }

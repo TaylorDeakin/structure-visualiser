@@ -42,6 +42,7 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
     // if they're a special block (ex stair or slab etc) then mark them as such
     foreach ($palette as $paletteItem) {
         $choice = decodePalette($paletteItem);
+        $blockId = $choice["id"];
         $foundType = false;
         if (isOfSpecifiedType($choice["id"], $stairs)) {
             $foundType = true;
@@ -52,23 +53,33 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
             }, ARRAY_FILTER_USE_BOTH);
         }
 
-        if (!$foundType && isOfSpecifiedType($choice["id"], $slabs)) {
+        if (!$foundType && isOfSpecifiedType($blockId, $slabs)) {
             $foundType = true;
             $choice["isSlab"] = true;
         }
 
-        if (!$foundType && isOfSpecifiedType($choice["id"], $fences)) {
+        if (!$foundType && isOfSpecifiedType($blockId, $fences)) {
             $foundType = true;
             $choice["isFence"] = true;
         }
 
-        if (!$foundType && isOfSpecifiedType($choice["id"], $walls)) {
+        if (!$foundType && isOfSpecifiedType($blockId, $walls)) {
+            $foundType = true;
             $choice["isWall"] = true;
+
+        }
+
+
+        if (!$foundType && isOfSpecifiedType($blockId, $panes)) {
+            $foundType = true;
+            $choice["isPane"] = true;
         }
 
         if (isset($choice["properties"])) {
             $choice["dataValue"] = getDataValues($choice["id"], $choice["properties"]);
         }
+
+
         $formatted_palette[] = $choice;
     }
 

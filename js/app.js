@@ -50,6 +50,7 @@ var models = {
     wallPost: null,
     wallInner: null,
     pane: null,
+    anvil: null,
 };
 // load all the models specified above
 for (key in Object.keys(models)) {
@@ -113,33 +114,35 @@ function rotateStair(stair, dataValue, pos) {
         case 3:
             stair.rotationName = "facing west - bottom";
             stair.rotation.y = 1.5708;
-            stair.position.set((pos.x * 16), pos.y * 16, pos.z * 16);
+            stair.position.set((pos.x * 16) - 4, (pos.y * 16), pos.z * 16);
             break;
         // facing south - top
         case 4:
+            stair.rotationName = "facing south - top";
             stair.position.set((pos.x * 16), (pos.y * 16), (pos.z * 16) + 4);
-            stair.rotation.z = Math.PI;
+            stair.rotation.x = Math.PI;
             break;
         // facing north - top
         case 5:
+            stair.rotationName = "facing north -top";
             stair.position.set((pos.x * 16), (pos.y * 16), (pos.z * 16) - 4);
             stair.rotation.z = Math.PI;
-            stair.rotation.x = Math.PI / 2;
             break;
         // facing east - top
         case 6:
+            stair.rotationName = "facing east - top";
             stair.position.set((pos.x * 16) + 4, (pos.y * 16), pos.z * 16);
             stair.rotation.z = Math.PI;
             stair.rotation.y = 4.71239;
             break;
         // facing west - top
         case 7:
+            stair.rotationName = "facing west - top";
             stair.rotation.z = Math.PI;
-            stair.position.set((pos.x * 16), pos.y * 16, pos.z * 16);
+            stair.position.set((pos.x * 16) - 4, pos.y * 16, pos.z * 16);
             stair.rotation.y = 1.5708;
             break;
     }
-
 }
 
 /**
@@ -163,6 +166,10 @@ function generateStructure(json) {
         // if it's an object, it has different textures for different sides
         // ex logs, furnace etc
         if (typeof element.textureFile === 'object') {
+            if (element.id == 145) {
+                element.texture = loadTexture("/res/textures/anvil_base.png");
+                return;
+            }
 
             var textures = element.textureFile;
             var sides, top, bottom;
@@ -220,7 +227,6 @@ function generateStructure(json) {
 
         // if it's not an air block
         if (paletteItem.id != 0) {
-
             // get the position part of the object for easier use later
             var pos = element.pos;
             var model;
@@ -247,6 +253,13 @@ function generateStructure(json) {
                 scene.add(model);
             } else if (paletteItem.isFence) {
                 model = models.fencePost.clone();
+                model.material.map = paletteItem.texture;
+                model.material.needsUpdate = true;
+                model.scale.set(8, 8, 8);
+                model.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
+                scene.add(model);
+            } else if (paletteItem.id == 145) {
+                model = models.anvil.clone();
                 model.material.map = paletteItem.texture;
                 model.material.needsUpdate = true;
                 model.scale.set(8, 8, 8);

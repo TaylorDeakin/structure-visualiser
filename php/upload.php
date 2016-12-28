@@ -75,6 +75,11 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
             $choice["isPane"] = true;
         }
 
+        if (!$foundType && $blockId === 145) {
+            $foundType = true;
+            $choice["isAnvil"] = true;
+        }
+
         if (isset($choice["properties"])) {
             $choice["dataValue"] = getDataValues($choice["id"], $choice["properties"]);
         }

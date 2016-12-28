@@ -4,487 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/php/idToTexture.php" line="740" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82e08213-8c60-4024-9e79-d2b2e5eaf86f" name="Default" comment="more detailed explaination of the getDataValues function">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/anvil_base.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/anvil_top_damaged_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/anvil_top_damaged_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/anvil_top_damaged_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/beacon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/bed_feet_end.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/bed_feet_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/bed_feet_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/bed_head_end.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/bed_head_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/bed_head_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/bedrock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/beetroots_stage_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/beetroots_stage_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/beetroots_stage_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/beetroots_stage_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/bone_block_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/bone_block_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/bookshelf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/brewing_stand.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/brewing_stand_base.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/brick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cactus_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cactus_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cactus_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cake_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cake_inner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cake_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cake_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/carrots_stage_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/carrots_stage_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/carrots_stage_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/carrots_stage_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cauldron_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cauldron_inner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cauldron_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cauldron_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/chain_command_block_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/chain_command_block_conditional.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/chain_command_block_front.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/chain_command_block_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/chorus_flower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/chorus_flower_dead.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/chorus_plant.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/clay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/coal_block.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/coal_ore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/coarse_dirt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cobblestone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cobblestone_mossy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cocoa_stage_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cocoa_stage_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/cocoa_stage_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/command_block_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/command_block_conditional.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/command_block_front.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/command_block_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/comparator_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/comparator_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/crafting_table_front.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/crafting_table_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/crafting_table_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/daylight_detector_inverted_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/daylight_detector_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/daylight_detector_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/deadbush.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/debug.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/debug2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/destroy_stage_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/destroy_stage_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/destroy_stage_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/destroy_stage_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/destroy_stage_4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/destroy_stage_5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/destroy_stage_6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/destroy_stage_7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/destroy_stage_8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/destroy_stage_9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/diamond_block.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/diamond_ore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/dirt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/dirt_podzol_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/dirt_podzol_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/dispenser_front_horizontal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/dispenser_front_vertical.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_acacia_lower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_acacia_upper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_birch_lower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_birch_upper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_dark_oak_lower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_dark_oak_upper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_iron_lower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_iron_upper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_jungle_lower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_jungle_upper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_spruce_lower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_spruce_upper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_wood_lower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/door_wood_upper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_fern_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_fern_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_grass_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_grass_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_paeonia_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_paeonia_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_rose_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_rose_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_sunflower_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_sunflower_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_sunflower_front.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_sunflower_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_syringa_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/double_plant_syringa_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/dragon_egg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/dropper_front_horizontal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/dropper_front_vertical.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/emerald_block.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/emerald_ore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/enchanting_table_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/enchanting_table_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/enchanting_table_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/end_bricks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/end_rod.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/end_stone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/endframe_eye.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/endframe_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/endframe_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/farmland_dry.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/farmland_wet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/fern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/fire_layer_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/fire_layer_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_allium.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_blue_orchid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_dandelion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_houstonia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_oxeye_daisy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_paeonia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_pot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_rose.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_tulip_orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_tulip_pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_tulip_red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/flower_tulip_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/frosted_ice_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/frosted_ice_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/frosted_ice_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/frosted_ice_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/furnace_front_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/furnace_front_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/furnace_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/furnace_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_cyan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_light_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_lime.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_magenta.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_cyan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_light_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_lime.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_magenta.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_purple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_silver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pane_top_yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_purple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_silver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glass_yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/glowstone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/gold_block.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/gold_ore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/grass_path_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/grass_path_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/grass_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/grass_side_overlay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/grass_side_snowed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/grass_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/gravel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_cyan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_light_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_lime.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_magenta.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_purple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_silver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hardened_clay_stained_yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hay_block_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hay_block_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hopper_inside.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hopper_outside.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/hopper_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/ice.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/ice_packed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/iron_bars.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/iron_block.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/iron_ore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/iron_trapdoor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/itemframe_background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/jukebox_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/jukebox_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/ladder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/lapis_block.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/lapis_ore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/lava_flow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/lava_still.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/leaves_acacia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/leaves_big_oak.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/leaves_birch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/leaves_jungle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/leaves_oak.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/leaves_spruce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/lever.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/lit_redstone_lamp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_acacia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_acacia_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_big_oak.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_big_oak_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_birch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_birch_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_jungle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_jungle_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_oak.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_oak_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_spruce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/log_spruce_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/magma.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/melon_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/melon_stem_connected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/melon_stem_disconnected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/melon_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/mob_spawner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/mushroom_block_inside.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/mushroom_block_skin_brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/mushroom_block_skin_red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/mushroom_block_skin_stem.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/mushroom_brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/mushroom_red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/mycelium_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/mycelium_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/nether_brick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/nether_wart_block.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/nether_wart_stage_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/nether_wart_stage_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/nether_wart_stage_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/netherrack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/noteblock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/observer_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/observer_back_lit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/observer_front.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/observer_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/observer_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/obsidian.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/piston_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/piston_inner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/piston_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/piston_top_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/piston_top_sticky.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/planks_acacia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/planks_big_oak.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/planks_birch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/planks_jungle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/planks_oak.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/planks_spruce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/portal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/potatoes_stage_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/potatoes_stage_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/potatoes_stage_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/potatoes_stage_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/prismarine_bricks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/prismarine_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/prismarine_rough.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/pumpkin_face_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/pumpkin_face_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/pumpkin_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/pumpkin_stem_connected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/pumpkin_stem_disconnected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/pumpkin_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/purpur_block.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/purpur_pillar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/purpur_pillar_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/quartz_block_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/quartz_block_chiseled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/quartz_block_chiseled_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/quartz_block_lines.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/quartz_block_lines_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/quartz_block_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/quartz_block_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/quartz_ore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/rail_activator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/rail_activator_powered.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/rail_detector.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/rail_detector_powered.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/rail_golden.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/rail_golden_powered.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/rail_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/rail_normal_turned.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/red_nether_brick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/red_sand.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/red_sandstone_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/red_sandstone_carved.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/red_sandstone_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/red_sandstone_smooth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/red_sandstone_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/redstone_block.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/redstone_dust_dot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/redstone_dust_line0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/redstone_dust_line1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/redstone_dust_overlay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/redstone_lamp_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/redstone_lamp_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/redstone_ore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/redstone_torch_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/redstone_torch_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/reeds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/repeater_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/repeater_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/repeating_command_block_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/repeating_command_block_conditional.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/repeating_command_block_front.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/repeating_command_block_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sand.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sandstone_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sandstone_carved.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sandstone_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sandstone_smooth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sandstone_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sapling_acacia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sapling_birch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sapling_jungle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sapling_oak.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sapling_roofed_oak.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sapling_spruce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sea_lantern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_cyan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_light_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_lime.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_magenta.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_purple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_silver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/shulker_top_yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/slime.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/snow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/soul_sand.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sponge.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sponge_wet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stone_andesite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stone_andesite_smooth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stone_diorite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stone_diorite_smooth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stone_granite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stone_granite_smooth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stone_slab_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stone_slab_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stonebrick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stonebrick_carved.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stonebrick_cracked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/stonebrick_mossy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/structure_block.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/structure_block_corner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/structure_block_data.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/structure_block_load.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/structure_block_save.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/tallgrass.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/tnt_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/tnt_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/tnt_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/torch_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/trapdoor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/trip_wire.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/trip_wire_source.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/vine.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/water_flow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/water_overlay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/water_still.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/waterlily.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/web.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wheat_stage_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wheat_stage_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wheat_stage_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wheat_stage_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wheat_stage_4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wheat_stage_5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wheat_stage_6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wheat_stage_7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_cyan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_light_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_lime.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_magenta.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_purple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_silver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/wool_colored_yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/caravan.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/cart.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/floating-island-sm.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/floating-island.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/output.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/stairs.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/statue.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/sword.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/test.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/tower-lg.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/tower2.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/train.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/wood.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/woodpile.nbt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/models/fencePost.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/models/pane.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/models/wallInner.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/models/wallPost.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/chain_command_block_back.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/chain_command_block_conditional.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/chain_command_block_front.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/chain_command_block_side.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/command_block_back.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/command_block_conditional.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/command_block_front.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/command_block_side.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/fire_layer_0.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/fire_layer_1.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/lava_flow.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/lava_still.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/magma.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/portal.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/prismarine_rough.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/repeating_command_block_back.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/repeating_command_block_conditional.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/repeating_command_block_front.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/repeating_command_block_side.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/sea_lantern.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/water_flow.png.mcmeta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/textures/water_still.png.mcmeta" />
+    <list default="true" id="82e08213-8c60-4024-9e79-d2b2e5eaf86f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/models/anvil.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/blockTypeArrays.php" afterPath="$PROJECT_DIR$/php/blockTypeArrays.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/upload.php" afterPath="$PROJECT_DIR$/php/upload.php" />
     </list>
     <ignored path="StructrureVisualiser.iws" />
@@ -507,21 +30,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="upload.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="upload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46095446">
-              <caret line="124" column="1" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
+            <state vertical-scroll-proportion="-16.566668">
+              <caret line="238" column="20" selection-start-line="238" selection-start-column="20" selection-end-line="238" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5235426">
+              <caret line="131" column="15" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="anvil.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/models/anvil.json">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="284" column="0" selection-start-line="284" selection-start-column="0" selection-end-line="284" selection-end-column="0" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -540,8 +73,8 @@
       <file leaf-file-name="blocks.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/blocks.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="25" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="25" />
+            <state vertical-scroll-proportion="-9.9">
+              <caret line="144" column="19" selection-start-line="144" selection-start-column="14" selection-end-line="144" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -685,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -813,6 +345,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -972,7 +505,13 @@
       <option name="project" value="LOCAL" />
       <updated>1482800417416</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="adds resource files that were missing, also the beginnings of panes">
+      <created>1482819078529</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1482819078529</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -992,24 +531,24 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13059701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13166311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842106" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31263158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3326316" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936775" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.312961" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -1039,7 +578,8 @@
     <MESSAGE value="updated readme&#10;" />
     <MESSAGE value="updated readme more, fixed a console.log statement that broke edge" />
     <MESSAGE value="more detailed explaination of the getDataValues function" />
-    <option name="LAST_COMMIT_MESSAGE" value="more detailed explaination of the getDataValues function" />
+    <MESSAGE value="adds resource files that were missing, also the beginnings of panes" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds resource files that were missing, also the beginnings of panes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1048,14 +588,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/idToDataValues.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="876" column="7" selection-start-line="876" selection-start-column="4" selection-end-line="876" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1359,7 +891,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           <folding>
-            <element signature="e#6#201#0#PHP" expanded="true" />
+            <element signature="e#6#201#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1375,22 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/blocks.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="25" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/blockTypeArrays.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1410,18 +926,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/res/blocks.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.9">
+          <caret line="144" column="19" selection-start-line="144" selection-start-column="14" selection-end-line="144" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/blockTypeArrays.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="284" column="0" selection-start-line="284" selection-start-column="0" selection-end-line="284" selection-end-column="0" />
+          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/models/anvil.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46095446">
-          <caret line="124" column="1" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
+        <state vertical-scroll-proportion="-16.566668">
+          <caret line="238" column="20" selection-start-line="238" selection-start-column="20" selection-end-line="238" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5235426">
+          <caret line="131" column="15" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="15" />
           <folding />
         </state>
       </provider>

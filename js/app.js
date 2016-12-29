@@ -17,13 +17,13 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     MAXANISO = renderer.getMaxAnisotropy();
 
-    // mouse control via another library
-    controls = new THREE.OrbitControls(camera, renderer.domElement);
-
     // set default camera position
     camera.position.z = 50;
     camera.position.y = 500;
     camera.position.x = 500;
+
+    // mouse control via another library
+    controls = new THREE.OrbitControls(camera, renderer.domElement);
 
     var axisHelper = new THREE.AxisHelper(5);
     scene.add(axisHelper);
@@ -73,7 +73,7 @@ function loadTexture(url) {
 }
 
 function addLight(pos) {
-    var pLight = new THREE.PointLight(0xff0000, 1, 100);
+    var pLight = new THREE.PointLight(0xF4CB42, 1, 80);
     pLight.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
     scene.add(pLight);
 }
@@ -370,7 +370,7 @@ Array.prototype.forEach.call(inputs, function (input) {
 var main = document.getElementById("mainWrapper");
 function clearScreen() {
     main.className += " exit";
-    setTimeout(showSpinner, 500);
+    setTimeout(showSpinner, 50);
 }
 
 function showSpinner() {

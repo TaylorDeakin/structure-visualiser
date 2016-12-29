@@ -44,9 +44,9 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
         $choice = decodePalette($paletteItem);
         $blockId = $choice["id"];
         $foundType = false;
-        if (isOfSpecifiedType($choice["id"], $stairs)) {
+        if (isOfSpecifiedType($blockId, $stairs)) {
             $foundType = true;
-            $choice["isStair"] = true;
+            $choice["model"] = "stair";
             // strip out the shape property because it's causing trouble, and not needed
             $choice["properties"] = array_filter($choice["properties"], function ($k, $v) {
                 return !(strpos($k, "shape") !== false);
@@ -55,33 +55,36 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $file)) {
 
         if (!$foundType && isOfSpecifiedType($blockId, $slabs)) {
             $foundType = true;
-            $choice["isSlab"] = true;
+            $choice["model"] = "slab";
         }
 
         if (!$foundType && isOfSpecifiedType($blockId, $fences)) {
             $foundType = true;
-            $choice["isFence"] = true;
+            $choice["model"] = "fence";
         }
 
         if (!$foundType && isOfSpecifiedType($blockId, $walls)) {
             $foundType = true;
-            $choice["isWall"] = true;
+            //$choice["model"] = "wall";
 
         }
-
 
         if (!$foundType && isOfSpecifiedType($blockId, $panes)) {
             $foundType = true;
-            $choice["isPane"] = true;
+            //$choice["model"] = "pane";
         }
 
-        if (!$foundType && $blockId === 145) {
+        if (!$foundType && $blockId == 145) {
             $foundType = true;
-            $choice["isAnvil"] = true;
+            $choice["model"] = "anvil";
         }
 
         if (isset($choice["properties"])) {
             $choice["dataValue"] = getDataValues($choice["id"], $choice["properties"]);
+        }
+
+        if (isOfSpecifiedType($blockId, $lightSources)) {
+            $choice["isLightSource"] = true;
         }
 
 

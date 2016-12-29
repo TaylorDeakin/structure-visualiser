@@ -12,12 +12,9 @@ function init() {
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     var light = new THREE.AmbientLight(0xffffff); // soft white light
     scene.add(light);
-
-// the renderer itself - alpha means transparency
+    // the renderer itself - alpha means transparency
     renderer = new THREE.WebGLRenderer({alpha: true});
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.sortObjects = false;
-
     MAXANISO = renderer.getMaxAnisotropy();
 
     // mouse control via another library
@@ -64,16 +61,23 @@ for (key in Object.keys(models)) {
 function loadModel(key) {
     var JSONloader = new THREE.JSONLoader();
     JSONloader.load("/res/models/" + Object.keys(models)[key] + ".json", function (geometry, material) {
-        models[Object.keys(models)[key]] = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial());
+        models[Object.keys(models)[key]] = new THREE.Mesh(geometry, new THREE.MeshPhongMaterial());
     });
 }
 
 // texture loader function
 function loadTexture(url) {
-    var tex = THREE.ImageUtils.loadTexture(url);
+    var tex = new THREE.TextureLoader().load(url);
     tex.anisotropy = MAXANISO;
     return tex;
 }
+
+function addLight(pos) {
+    var pLight = new THREE.PointLight(0xff0000, 1, 100);
+    pLight.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
+    scene.add(pLight);
+}
+
 /**
  * rotates stairs to their correct orientation and position
  *
@@ -88,7 +92,6 @@ function rotateStair(stair, dataValue, pos) {
     stair.isStair = true;
     spinnerText.innerHTML = "Rotating Stairs";
     stair.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
-    console.log(dataValue);
     // the data value indicates which direction a stair ought to be facing
     switch (dataValue) {
         // facing south - bottom
@@ -195,22 +198,22 @@ function generateStructure(json) {
             }
             // make a cube
             element.texture = [
-                new THREE.MeshLambertMaterial({
+                new THREE.MeshPhongMaterial({
                     map: loadTexture("/res/textures/" + sides + ".png"), transparent: true
                 }),
-                new THREE.MeshLambertMaterial({
+                new THREE.MeshPhongMaterial({
                     map: loadTexture("/res/textures/" + sides + ".png"), transparent: true
                 }),
-                new THREE.MeshLambertMaterial({
+                new THREE.MeshPhongMaterial({
                     map: loadTexture("/res/textures/" + top + ".png"), transparent: true
                 }),
-                new THREE.MeshLambertMaterial({
+                new THREE.MeshPhongMaterial({
                     map: loadTexture("/res/textures/" + bottom + ".png"), transparent: true
                 }),
-                new THREE.MeshLambertMaterial({
+                new THREE.MeshPhongMaterial({
                     map: loadTexture("/res/textures/" + sides + ".png"), transparent: true
                 }),
-                new THREE.MeshLambertMaterial({
+                new THREE.MeshPhongMaterial({
                     map: loadTexture("/res/textures/" + sides + ".png"), transparent: true
                 })
 
@@ -225,69 +228,90 @@ function generateStructure(json) {
     blocks.forEach(function (element) {
         paletteItem = palette[element.state];
 
-        // if it's not an air block
-        if (paletteItem.id != 0) {
-            // get the position part of the object for easier use later
-            var pos = element.pos;
-            var model;
-            if (paletteItem.isStair) {
-                model = models.stair.clone();
-                model.material.map = paletteItem.texture;
-                model.material.needsUpdate = true;
-                model.scale.set(8, 8, 8);
-                rotateStair(model, paletteItem.dataValue, pos);
-                scene.add(model);
-            } else if (paletteItem.isSlab) {
-                model = models.slab.clone();
-                model.material.map = paletteItem.texture;
-                model.material.needsUpdate = true;
-                model.scale.set(8, 8, 8);
-                // slabs start out centered
-                // -4 will move them to the bottom
-                var offset = -4;
-                // slabs with a data value of 8 or higher are top slabs, so invert offset
-                if (paletteItem.dataValue > 7) {
-                    offset = 4;
-                }
-                model.position.set(pos.x * 16, (pos.y * 16) + offset, pos.z * 16);
-                scene.add(model);
-            } else if (paletteItem.isFence) {
-                model = models.fencePost.clone();
-                model.material.map = paletteItem.texture;
-                model.material.needsUpdate = true;
-                model.scale.set(8, 8, 8);
-                model.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
-                scene.add(model);
-            } else if (paletteItem.id == 145) {
-                model = models.anvil.clone();
-                model.material.map = paletteItem.texture;
-                model.material.needsUpdate = true;
-                model.scale.set(8, 8, 8);
-                model.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
-                scene.add(model);
-            } else {
-                // 16x16x16 cube
-                var geometry = new THREE.CubeGeometry(16, 16, 16);
-                var texture = paletteItem.texture;
-                var material;
-                if (texture.constructor === Array) {
-                    material = new THREE.MultiMaterial(texture);
-                } else {
-                    material = new THREE.MeshBasicMaterial({map: palette[element.state].texture, transparent: true});
-                }
-                // make it happen
+        // if block is air, we don't care, so exit early
+        if (paletteItem.id == 0) {
+            return;
+        }
 
-                var cube = new THREE.Mesh(geometry, material);
-                // set position (since cubes are 16 units^3, need to times position by 16)
-                cube.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
-                // show it
-                scene.add(cube);
+        var pos = element.pos;
+
+        if (paletteItem.isLightSource) {
+            addLight(pos);
+        }
+
+        // if we're using a custom model, we need to figure out which one
+        if (paletteItem.hasOwnProperty("model")) {
+            // get the position part of the object for easier use later
+            var model;
+            switch (paletteItem["model"]) {
+                case "stair":
+                    model = models.stair.clone(new THREE.MeshPhongMaterial);
+                    model.material = models.stair.material.clone();
+                    model.material.needsUpdate = true;
+                    model.material.map = new THREE.TextureLoader().load("/res/textures/" + paletteItem.textureFile + ".png");
+
+                    model.scale.set(8, 8, 8);
+                    rotateStair(model, paletteItem.dataValue, pos);
+                    scene.add(model);
+                    model = null;
+                    break;
+                case "slab":
+                    model = models.slab.clone();
+                    model.material = models.slab.material.clone();
+                    model.material.needsUpdate = true;
+                    model.material.map = paletteItem.texture;
+                    model.scale.set(8, 8, 8);
+                    // slabs start out centered
+                    // -4 will move them to the bottom
+                    var offset = -4;
+                    // slabs with a data value of 8 or higher are top slabs, so invert offset
+                    if (paletteItem.dataValue > 7) {
+                        offset = 4;
+                    }
+                    model.position.set(pos.x * 16, (pos.y * 16) + offset, pos.z * 16);
+                    scene.add(model);
+                    break;
+                case "fence":
+                    model = models.fencePost.clone();
+                    model.material = models.fencePost.material.clone();
+                    model.material.map = paletteItem.texture;
+                    model.material.needsUpdate = true;
+                    model.scale.set(8, 8, 8);
+                    model.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
+                    scene.add(model);
+                    break;
+                case "anvil":
+                    console.log("anvil found");
+                    model = models.anvil.clone();
+                    model.material = models.anvil.material.clone();
+                    model.material.map = paletteItem.texture;
+                    model.material.needsUpdate = true;
+                    model.scale.set(8, 8, 8);
+                    model.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
+                    scene.add(model);
+                    break;
             }
+        } else {
+            // 16x16x16 cube
+            var geometry = new THREE.CubeGeometry(16, 16, 16);
+            var texture = paletteItem.texture;
+            var material;
+            if (texture.constructor === Array) {
+                material = new THREE.MultiMaterial(texture);
+            } else {
+                material = new THREE.MeshPhongMaterial({map: palette[element.state].texture, transparent: true});
+            }
+            // make it happen
+            var cube = new THREE.Mesh(geometry, material);
+            // set position (since cubes are 16 units^3, need to times position by 16)
+            cube.position.set(pos.x * 16, pos.y * 16, pos.z * 16);
+            // show it
+            scene.add(cube);
         }
     });
+
     document.body.appendChild(renderer.domElement);
-    removeSpinner();
-    render();
+
 }
 
 // prevent form submission and instead send ajax request
@@ -303,6 +327,8 @@ document.getElementById("structure-upload").addEventListener("submit", function 
     http.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             generateStructure(this.responseText);
+            render();
+            removeSpinner();
         }
     };
 
@@ -355,9 +381,4 @@ function showSpinner() {
 function removeSpinner() {
     var spinner = document.getElementById("spinner");
     document.body.removeChild(spinner);
-}
-
-function cloneModel(model) {
-    object = new THREE.Mesh(model.geometry, model.material);
-    return object;
 }

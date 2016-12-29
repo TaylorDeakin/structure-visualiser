@@ -9,7 +9,13 @@ $blockIdToTexture = [
         5 => "stone_andesite",
         6 => "stone_andesite_smooth",
     ],
-    2 => "grass",
+    2 => [
+        0 => [
+            "side" => "grass_side",
+            "top" => "grass_top",
+            "bottom" => "dirt",
+        ],
+    ],
     3 => [
         0 => "dirt",
         1 => "coarse_dirt",
@@ -52,18 +58,22 @@ $blockIdToTexture = [
         0 => [
             "side" => "log_oak",
             "top" => "log_oak_top",
+            "bottom" => "log_oak_top",
         ],
         1 => [
             "side" => "log_spruce",
             "top" => "log_spruce_top",
+            "bottom" => "log_spruce_top",
         ],
         2 => [
             "side" => "log_birch",
             "top" => "log_birch_top",
+            "bottom" => "log_birch_top",
         ],
         3 => [
             "side" => "log_jungle",
             "top" => "log_jungle_top",
+            "bottom" => "log_jungle_top",
         ],
     ],
     18 => [
@@ -250,10 +260,7 @@ $blockIdToTexture = [
     41 => "gold_block",
     42 => "iron_block",
     43 => [
-        0 => [
-            "side" => "stone_slab_side",
-            "top" => "stone_slab_top"
-        ],
+        0 => "stone_slab_top",
         1 => "sandstone_normal",
         2 => "planks_oak",
         3 => "cobblestone",
@@ -669,10 +676,12 @@ $blockIdToTexture = [
     162 => [
         0 => [
             "top" => "log_acacia_top",
+            "bottom" => "log_acacia_top",
             "side" => "log_acacia_side",
         ],
         1 => [
             "top" => "log_big_oak_top",
+            "bottom" => "log_big_oak_top",
             "side" => "log_big_oak_side",
         ],
     ],
